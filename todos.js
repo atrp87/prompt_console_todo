@@ -1,6 +1,6 @@
-var todos = ["Buy New Turtle"];
+const todos = ["Buy New Turtle"];
 
-var input = prompt("What would you like to do?");
+const input = prompt("What would you like to do?");
 
 while(input !== "quit"){
 	//handle input
@@ -26,14 +26,14 @@ function printList() {
 
 function addTodo(){
 	//ask for new todo
-	var newTodo = prompt("Enter new todo");
+	let newTodo = prompt("Enter new todo");
 	//add to todos array
 	todos.push(newTodo);
 	console.log(newTodo + " added to list")
 }
 
 function deleteTodo(){
-	var index = prompt("Enter index of todo to delete");
+	let index = prompt("Enter index of todo to delete");
 	todos.splice(index, 1);
 	console.log("Todo Removed")
 }
